@@ -1,0 +1,14 @@
+#appbar {
+    background: transparent;
+    box-shadow: none;
+
+    .button-content {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+    }
+
+    .MuiToolbar-regular {
+        min-height: 34px;
+    }
+}
