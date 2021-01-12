@@ -1,3 +1,17 @@
 #home-page {
     display: flex;
+    background-color: rgb(182, 182, 182);
+    height: 100%;
+
+    .wave-svg {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .wave-path {
+        stroke: none;
+        fill: grey;
+    }
 }

@@ -22,7 +22,8 @@ function Title() {
   }
 
   return (
-    <div className="title-component-wrapper">
+    <section>
+      <div className="title-component-wrapper">
         <div className="content">
           <div id="title-name">david j. liang</div>
           <div id="icons-container">
@@ -30,8 +31,10 @@ function Title() {
             <span className="icon-wrapper"><GithubIcon id="github-icon" onClick={() => handleIconClick('github')}/></span>
             <span className="icon-wrapper"><ResumeIcon id="resume-icon" onClick={() => handleIconClick('resume')}/></span>
           </div>
+          
         </div>
-    </div>
+      </div>
+    </section>
   );
 }
 

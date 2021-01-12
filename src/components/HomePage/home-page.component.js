@@ -12,6 +12,9 @@ function HomePage() {
     <section id="home-page">
       {/* <Header></Header> */}
       <Sidebar></Sidebar>
+      <svg className="wave-svg" viewBox="0 0 500 250"> 
+        <path d="M0,100 C250,200 350,100 500,100 L500,00 L0,1 Z" className="wave-path"></path>
+      </svg>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
