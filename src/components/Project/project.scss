@@ -1,4 +1,58 @@
-.projects-wrapper {
+.project-wrapper {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.dialog-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em auto;
+}
+
+.dialog-info-wrapper {
+    margin-right: 1em;
+
+    .dialog-technologies, .dialog-links {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 0.5em;
+        
+        .dialog-technologies-tag {
+            margin-left: 0.3em;
+            margin-right: 0.3em;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+
+    .dialog-links {
+        margin-top: 2em;
+
+        .icon-wrapper {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .links-icon {
+            cursor: pointer;
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        #github-icon{
+            transition: fill 0.5s ease-out;
+        }
+        #github-icon:hover {
+            fill: var(--color-secondary);
+        }
+
+        #external-icon {
+            stroke: black;
+            transition: stroke 0.5s ease-out;
+        }
+        #external-icon:hover {
+            stroke: var(--color-secondary)
+        }
+    }
 }

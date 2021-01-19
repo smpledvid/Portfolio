@@ -13,12 +13,10 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 
 import './project.scss';
 import CorgiImage from '../../assets/images/CORGI.jpg';
+import {ReactComponent as GithubIcon} from '../../assets/images/GithubIcon.svg';
+import {ReactComponent as ExternalIcon} from '../../assets/images/ExternalIcon.svg';
 
 const useStyles = makeStyles((theme) => ({
-    projectWrapper: {
-      marginTop: '1em',
-      marginBottom: '1em',
-    },
     card: {
         display: 'flex',
         margin: '0 auto',
@@ -35,9 +33,15 @@ const useStyles = makeStyles((theme) => ({
     dialogImage: {
         // width: '50%'
     },
+    dialogDescriptionCard: {
+        padding: '1em',
+        backgroundColor: 'teal',
+        color: 'white'
+    },
     dialogDescription: {
         // width: '50%'
     },
+    
     image: {
         maxWidth: '100%',
         maxHeight: '100%'
@@ -54,19 +58,26 @@ const useStyles = makeStyles((theme) => ({
 
 function Project(props) {
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
+    const [dialogTitle, setDialogTitle] = useState('');
+    const [dialogDescription, setDialogDescription] = useState('');
+    const [projectTechnology, setProjectTechs] = useState([]);
     const classes = useStyles();
-
+ 
     function toggleProjectDialog() {
+        // Mocking Data
+        setDialogTitle('The Ultimate Corgi');
+        setDialogDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dot dolore magna aliqua. Ut enim sed do eiusmod tempor incididunt ut labore et dolore  magna ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+        setProjectTechs(['React', 'Javascript', 'HTML/CSS']);
+
         setDialogIsOpen(!dialogIsOpen);
     }
 
     return (
-        <section className={classes.projectWrapper}>
+        <section className='project-wrapper'>
             <Card className={classes.card} onClick={toggleProjectDialog}>
                 <CardMedia
                     className={classes.cover}
                     image={CorgiImage}
-                    title="pic of corgi"
                 />
             </Card>
             <Dialog
@@ -80,11 +91,25 @@ function Project(props) {
                 }}
             >
                 <div className="row">
-                    <div className={`col-md-6 ${classes.dialogImage}`}>
+                    <div className={`col-sm-6 ${classes.dialogImage}`}>
                         <img src={CorgiImage}  alt="" className={classes.image}/>
                     </div>
-                    <div className={`col-md-6 ${classes.dialogDescription}`}>
-                        bbb
+                    <div className={`col-sm-6`}>
+                        <div className="dialog-info-wrapper">
+                            <div className='dialog-title'>{dialogTitle}</div>
+                            <Card className={classes.dialogDescriptionCard}>
+                                <div>{dialogDescription}</div>
+                            </Card>
+                            <div className="dialog-technologies">
+                                {projectTechnology.map(technology => (
+                                    <span className="dialog-technologies-tag" key={technology}>{technology}</span>
+                                ))}
+                            </div>
+                            <div className="dialog-links">
+                                <span className="icon-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
+                                <span className="icon-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
