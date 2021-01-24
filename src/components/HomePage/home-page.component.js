@@ -5,6 +5,7 @@ import Header from '../Header/header.component';
 import About from '../About/about.component';
 import Sidebar from '../Sidebar/sidebar.component';
 import Projects from '../Projects/projects.component';
+import Experience from '../Experience/experience.component';
 
 import './home-page.scss';
 
@@ -36,6 +37,11 @@ function HomePage() {
         <div className="row">
           <div className="col-md-12">
             <Projects></Projects>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <Experience></Experience>
           </div>
         </div>
       </div>

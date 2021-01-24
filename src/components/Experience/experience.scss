@@ -1,0 +1,58 @@
+.tabs-container {
+    justify-content: center;
+}
+
+.tab-panels {
+    width: 40em;
+
+    .tab-panel-box {
+        padding: 1em 0.5em;
+    }
+}
+
+.tab-panel-wrapper {
+    width: 100%;
+
+    .header {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: inherit;
+        margin-top: 1em;
+        font-size: 1.6em;
+    }
+
+    .company-name {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 2em;
+        color: var(--color-secondary);
+        cursor: pointer;
+    }
+
+    .company-name:after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: var(--color-secondary);
+        transition: 300ms;
+    }
+
+    .company-name:hover:after {
+        visibility: visible;
+        width: 100%;
+      }
+    
+    .company-role {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    .experience-date {
+        font-size: 1.5em;
+    }
+}

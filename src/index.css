@@ -8,6 +8,11 @@
   font-weight: bold;
 }
 
+.section-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 html, body, #root, #root > div {
   height: 100%
 }
