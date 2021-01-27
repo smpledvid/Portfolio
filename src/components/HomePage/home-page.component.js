@@ -6,6 +6,7 @@ import About from '../About/about.component';
 import Sidebar from '../Sidebar/sidebar.component';
 import Projects from '../Projects/projects.component';
 import Experience from '../Experience/experience.component';
+import Contact from '../Contact/contact.component';
 
 import './home-page.scss';
 
@@ -44,9 +45,13 @@ function HomePage() {
             <Experience></Experience>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-12">
+            <Contact></Contact>
+          </div>
+        </div>
       </div>
     </section>
-    
   );
 }
 
