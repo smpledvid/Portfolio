@@ -23,6 +23,7 @@ function TabPanel(props) {
         {value === index && (
           <Box p={3} className="tab-panel-box">
             <Typography>{children}</Typography>
+            {/* <div>{children}</div> */}
           </Box>
         )}
       </div>
@@ -71,12 +72,8 @@ function Experience() {
         setValue(newValue);
     };
 
-    const handleChangeIndex = (index) => {
-        setValue(index);
-    };
-
     return (
-        <section className="section-wrapper">
+        <section className="section-wrapper" id="Experience">
             <div className="row">
                 <div className="col-md-12 section-titles">Experience</div>
             </div>

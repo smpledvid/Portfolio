@@ -34,7 +34,7 @@ function Contact() {
     const [message, setMessage] = useState('');
 
     return (
-        <section className="section-wrapper">
+        <section className="section-wrapper" id="Contact">
             <div className="row">
                 <div className="col-md-12 section-titles">Contact Me</div>
             </div>

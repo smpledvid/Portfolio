@@ -24,4 +24,13 @@
         fill: gray;
         // transition: fill 350ms ease 0s;
     }
+
+    .scroll-top-container {
+
+        #scroll-top-button {
+            position: fixed;
+            bottom: 2%;
+            right: 1%;
+        }
+    }
 }

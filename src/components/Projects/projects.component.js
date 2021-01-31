@@ -3,7 +3,7 @@ import Project from '../Project/project.component';
 
 function Projects() {
     return (
-        <section className="section-wrapper">
+        <section className="section-wrapper" id="Projects">
             <div className="row">
                 <div className="col-md-12 section-titles">Projects</div>
             </div>

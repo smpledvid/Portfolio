@@ -5,6 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -50,7 +51,9 @@ function Sidebar(props) {
                 <ListItem button key={text}>
                     {/* <ListItemIcon>{text}</ListItemIcon> */}
                     <ListItemText className={classes.drawerTextWrapper}>
-                        <span className={classes.drawerText}>{text}</span>
+                        <span className={classes.drawerText}>
+                            <AnchorLink href={`#${text}`}>{text}</AnchorLink>
+                        </span>
                     </ListItemText>
                 </ListItem>
                 ))}
