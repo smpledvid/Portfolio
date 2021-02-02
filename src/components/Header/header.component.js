@@ -57,10 +57,6 @@ function Header() {
                           <AnchorLink href='#Contact'>
                             <Button color="inherit"><span className="button-content">Contact</span></Button>
                           </AnchorLink>
-                          
-                          
-                          
-                          
                         </div>
                     </Toolbar>
                 </AppBar>
