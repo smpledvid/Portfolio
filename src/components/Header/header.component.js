@@ -8,6 +8,8 @@ import Button from '@material-ui/core/Button';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import './header.scss';
 
 function HideOnScroll(props) {
@@ -43,10 +45,22 @@ function Header() {
                     <Toolbar>
                         <Typography variant="h6" className={classes.title}></Typography>
                         <div>
+                          <AnchorLink href='#About'>
                             <Button color="inherit"><span className="button-content">About</span></Button>
+                          </AnchorLink>
+                          <AnchorLink href='#Projects'>
                             <Button color="inherit"><span className="button-content">Projects</span></Button>
+                          </AnchorLink>
+                          <AnchorLink href='#Experience'>
                             <Button color="inherit"><span className="button-content">Experience</span></Button>
+                          </AnchorLink>
+                          <AnchorLink href='#Contact'>
                             <Button color="inherit"><span className="button-content">Contact</span></Button>
+                          </AnchorLink>
+                          
+                          
+                          
+                          
                         </div>
                     </Toolbar>
                 </AppBar>

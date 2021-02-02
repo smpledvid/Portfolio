@@ -5,14 +5,14 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 import './sidebar.scss';
 
-const drawerWidth = 100;
+const drawerWidth = 75;
 
 const useStyles = makeStyles((theme) => ({
   drawer: {
@@ -24,17 +24,17 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     justifyContent: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: '#121F3D',
     border: 'none'
   },
   drawerTextWrapper: {
     textAlign: 'center'
   },
   drawerText: {
-    fontWeight: 'bold',
-    fontSize: '1.3em',
-    color: '#3B3B3B',
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+    fontWeight: 400,
+    fontSize: '1em',
+    color: 'white',
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
   }
 }));
 
@@ -48,14 +48,13 @@ function Sidebar(props) {
             <div className={classes.toolbar} />
             <List>
                 {['About', 'Projects', 'Experience', 'Contact'].map((text, index) => (
-                <ListItem button key={text}>
-                    {/* <ListItemIcon>{text}</ListItemIcon> */}
-                    <ListItemText className={classes.drawerTextWrapper}>
-                        <span className={classes.drawerText}>
-                            <AnchorLink href={`#${text}`}>{text}</AnchorLink>
-                        </span>
-                    </ListItemText>
-                </ListItem>
+                <AnchorLink href={`#${text}`}>
+                    <ListItem button key={text}>
+                        <ListItemText className={classes.drawerTextWrapper}>
+                            <span className={classes.drawerText}>{text}</span>
+                        </ListItemText>
+                    </ListItem>
+                </AnchorLink>
                 ))}
             </List>
         </div>

@@ -3,6 +3,8 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import CorgiImage from '../../assets/images/CORGI.jpg';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import './contact.scss';
 
@@ -36,13 +38,14 @@ function Contact() {
     return (
         <section className="section-wrapper" id="Contact">
             <div className="row">
-                <div className="col-md-12 section-titles">Contact Me</div>
+                <Fade bottom><div className="col-md-12 section-titles">Contact Me</div></Fade>
             </div>
             <div className="row contact-wrapper">
                 <div className="col-md-6 avatar-wrapper">
-                    <Avatar alt="Remy Sharp" src={CorgiImage} className={classes.avatar}/>
+                    <Flip><Avatar alt="Remy Sharp" src={CorgiImage} className={classes.avatar}/></Flip>
                 </div>
                 <div className="col-md-6">
+                    <Fade right>
                     <div className="row">
                         <div className="col-md-6">
                             <div className="input-labels">Name:</div>
@@ -97,6 +100,7 @@ function Contact() {
                             </div>
                         </div>
                     </div>
+                    </Fade>
                 </div>
             </div>
         </section>

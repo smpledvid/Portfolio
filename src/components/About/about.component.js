@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
+import Fade from 'react-reveal/Fade';
 
 import ReactLogo from '../../assets/images/ReactLogo.png';
 import JavascriptLogo from  '../../assets/images/JavascriptLogo.png';
@@ -62,11 +63,17 @@ function About() {
 
     return (
         <section className="container" id="About">
-            <div className="row"><div className="section-titles">About</div></div>
             <div className="row">
-                <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
+                <Fade bottom><div className="section-titles">About</div></Fade>
             </div>
-            <div className="row"><div className="section-titles">Skills</div></div>
+            <div className="row">
+                <Fade bottom>
+                    <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
+                </Fade>
+            </div>
+            <div className="row">
+                <Fade bottom><div className="section-titles">Skills</div></Fade>
+            </div>
             <div className="row">
                 <div className="col-md-12">
                     <div className={`row skill-chips-row  ${classes.skillChipRowBg}`}>

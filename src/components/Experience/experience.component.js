@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Fade from 'react-reveal/Fade';
 
 import './experience.scss';
 
@@ -75,88 +76,90 @@ function Experience() {
     return (
         <section className="section-wrapper" id="Experience">
             <div className="row">
-                <div className="col-md-12 section-titles">Experience</div>
+                <Fade bottom><div className="col-md-12 section-titles">Experience</div></Fade>
             </div>
             <div className="row">
-                <div className={`tabs-container ${classes.root}`}>
-                    <Tabs
-                        orientation="vertical"
-                        variant="fullWidth"
-                        value={value}
-                        onChange={handleChange}
-                        className={classes.tabs}
-                        TabIndicatorProps={{ classes: { root: classes.tabIndicator} }}
-                        
-                    >
-                        <Tab className={classes.tab} label="Avanade" {...a11yProps(0)} />
-                        <Tab className={classes.tab} label="Ecogate" {...a11yProps(1)} />
-                        <Tab className={classes.tab} label="UCR" {...a11yProps(2)} />
+                <Fade bottom>
+                    <div className={`tabs-container ${classes.root}`}>
+                        <Tabs
+                            orientation="vertical"
+                            variant="fullWidth"
+                            value={value}
+                            onChange={handleChange}
+                            className={classes.tabs}
+                            TabIndicatorProps={{ classes: { root: classes.tabIndicator} }}
+                            
+                        >
+                            <Tab className={classes.tab} label="Avanade" {...a11yProps(0)} />
+                            <Tab className={classes.tab} label="Ecogate" {...a11yProps(1)} />
+                            <Tab className={classes.tab} label="UCR" {...a11yProps(2)} />
 
-                    </Tabs>
-                    <TabPanel value={value} index={0}>
-                        <div className="tab-panel-wrapper">
-                            <div className="header">
-                                <div>
-                                    <span className="company-role">Software Engineer @ </span><span className="company-name">Avanade</span>
+                        </Tabs>
+                        <TabPanel value={value} index={0}>
+                            <div className="tab-panel-wrapper">
+                                <div className="header">
+                                    <div>
+                                        <span className="company-role">Software Engineer @ </span><span className="company-name">Avanade</span>
+                                    </div>
+                                    <div className="experience-date">
+                                        March 2019 - Present
+                                    </div>
                                 </div>
-                                <div className="experience-date">
-                                    March 2019 - Present
-                                </div>
-                            </div>
-                            <div className="description">
-                                <ul>
-                                    <li>Created a more user friendly web page for Ecogate's clients.</li>
-                                    <li>Handled any previous or new bugs that may appear.</li>
-                                    <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
-                                    <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
-                                    <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        <div className="tab-panel-wrapper">
-                            <div className="header">
-                                <div>
-                                    <span className="company-role">Software Engineer Intern @ </span><span className="company-name">Ecogate</span>
-                                </div>
-                                <div className="experience-date">
-                                    June 2017 - Sept 2017
+                                <div className="description">
+                                    <ul>
+                                        <li>Created a more user friendly web page for Ecogate's clients.</li>
+                                        <li>Handled any previous or new bugs that may appear.</li>
+                                        <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
+                                        <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
+                                        <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="description">
-                                <ul>
-                                    <li>Created a more user friendly web page for Ecogate's clients.</li>
-                                    <li>Handled any previous or new bugs that may appear.</li>
-                                    <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
-                                    <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
-                                    <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        <div className="tab-panel-wrapper">
-                            <div className="header">
-                                <div>
-                                    <span className="company-role">Student @ </span><span className="company-name">University of California Riverside</span>
+                        </TabPanel>
+                        <TabPanel value={value} index={1}>
+                            <div className="tab-panel-wrapper">
+                                <div className="header">
+                                    <div>
+                                        <span className="company-role">Software Engineer Intern @ </span><span className="company-name">Ecogate</span>
+                                    </div>
+                                    <div className="experience-date">
+                                        June 2017 - Sept 2017
+                                    </div>
                                 </div>
-                                <div className="experience-date">
-                                    Oct 2014 - June 2018
+                                <div className="description">
+                                    <ul>
+                                        <li>Created a more user friendly web page for Ecogate's clients.</li>
+                                        <li>Handled any previous or new bugs that may appear.</li>
+                                        <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
+                                        <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
+                                        <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="description">
-                                <ul>
-                                    <li>Created a more user friendly web page for Ecogate's clients.</li>
-                                    <li>Handled any previous or new bugs that may appear.</li>
-                                    <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
-                                    <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
-                                    <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
-                                </ul>
+                        </TabPanel>
+                        <TabPanel value={value} index={2}>
+                            <div className="tab-panel-wrapper">
+                                <div className="header">
+                                    <div>
+                                        <span className="company-role">Student @ </span><span className="company-name">University of California Riverside</span>
+                                    </div>
+                                    <div className="experience-date">
+                                        Oct 2014 - June 2018
+                                    </div>
+                                </div>
+                                <div className="description">
+                                    <ul>
+                                        <li>Created a more user friendly web page for Ecogate's clients.</li>
+                                        <li>Handled any previous or new bugs that may appear.</li>
+                                        <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
+                                        <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
+                                        <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </TabPanel>
-                </div>
+                        </TabPanel>
+                    </div>
+                </Fade>
             </div>
         </section>
     )
