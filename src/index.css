@@ -3,9 +3,24 @@
   --section-title-font-size: 10em;
 }
 
-.section-titles{
+.section-titles {
   font-size: 3em;
   font-weight: bold;
+  display: inline-block;
+}
+
+.section-titles:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.section-titles:hover:after {
+  visibility: visible;
+  width: 100%;
 }
 
 .section-wrapper {

@@ -78,9 +78,11 @@ function About() {
                 <div className="col-md-12">
                     <div className={`row skill-chips-row  ${classes.skillChipRowBg}`}>
                         <div className="skill-chips-container">
-                            {listOfSkills.map(skillLabel => (
+                            {listOfSkills.map((skillLabel, labelIndex) => (
                                 <span key={skillLabel} className="skill-chip-wrapper">
-                                    <Chip className={classes.skillChip} label={skillLabel} onMouseEnter={() => onSkillChipHover(skillLabel)}></Chip>
+                                    <Fade bottom delay={labelIndex * 200}>
+                                        <Chip className={classes.skillChip} label={skillLabel} onMouseEnter={() => onSkillChipHover(skillLabel)}></Chip>
+                                    </Fade>
                                 </span>
                             ))}
                         </div>

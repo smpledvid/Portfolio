@@ -8,13 +8,14 @@ import Button from '@material-ui/core/Button';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Fade from 'react-reveal/Fade';
 
 import './header.scss';
 
 function HideOnScroll(props) {
     const { children, window } = props;
-    const trigger = useScrollTrigger({ target: window ? window() : undefined });
+    const trigger = useScrollTrigger({ target: window ? window() : undefined, disableHysteresis: true });
   
     return (
       <Slide appear={false} direction="down" in={!trigger}>
@@ -31,7 +32,12 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     navigation: {
-        alignContent: 'flex-end'
+      alignContent: 'flex-end'
+    },
+    button: {
+      "&:hover": {
+        backgroundColor: 'transparent',
+      }
     }
   }));
 
@@ -44,19 +50,27 @@ function Header() {
                 <AppBar id="appbar">
                     <Toolbar>
                         <Typography variant="h6" className={classes.title}></Typography>
-                        <div>
-                          <AnchorLink href='#About'>
-                            <Button color="inherit"><span className="button-content">About</span></Button>
-                          </AnchorLink>
-                          <AnchorLink href='#Projects'>
-                            <Button color="inherit"><span className="button-content">Projects</span></Button>
-                          </AnchorLink>
-                          <AnchorLink href='#Experience'>
-                            <Button color="inherit"><span className="button-content">Experience</span></Button>
-                          </AnchorLink>
-                          <AnchorLink href='#Contact'>
-                            <Button color="inherit"><span className="button-content">Contact</span></Button>
-                          </AnchorLink>
+                        <div className="header-buttons-container">
+                          <Fade bottom>
+                            <AnchorLink href='#About' className="header-anchor-link">
+                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; About</span></Button>
+                            </AnchorLink>
+                          </Fade>
+                          <Fade bottom delay={200}>
+                            <AnchorLink href='#Projects' className="header-anchor-link">
+                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Projects</span></Button>
+                            </AnchorLink>
+                          </Fade>
+                          <Fade bottom delay={400}>
+                            <AnchorLink href='#Experience' className="header-anchor-link">
+                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Experience</span></Button>
+                            </AnchorLink>
+                          </Fade>
+                          <Fade bottom delay={600}>
+                            <AnchorLink href='#Contact' className="header-anchor-link">
+                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Contact</span></Button>
+                            </AnchorLink>
+                          </Fade>
                         </div>
                     </Toolbar>
                 </AppBar>

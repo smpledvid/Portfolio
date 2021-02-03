@@ -76,7 +76,9 @@ function Experience() {
     return (
         <section className="section-wrapper" id="Experience">
             <div className="row">
-                <Fade bottom><div className="col-md-12 section-titles">Experience</div></Fade>
+                <div className="col-md-12">
+                    <Fade bottom><div className="section-titles">Experience</div></Fade>
+                </div>
             </div>
             <div className="row">
                 <Fade bottom>

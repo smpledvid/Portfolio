@@ -38,7 +38,9 @@ function Contact() {
     return (
         <section className="section-wrapper" id="Contact">
             <div className="row">
-                <Fade bottom><div className="col-md-12 section-titles">Contact Me</div></Fade>
+                <div className="col-md-12 ">
+                    <Fade bottom><div className="section-titles">Contact Me</div></Fade>
+                </div>
             </div>
             <div className="row contact-wrapper">
                 <div className="col-md-6 avatar-wrapper">

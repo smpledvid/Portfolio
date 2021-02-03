@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     dialog: {
         overflowX: 'hidden',
+        overflowY: 'hidden'
     },
     dialogImage: {
         // width: '50%'

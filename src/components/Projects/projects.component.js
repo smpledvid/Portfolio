@@ -6,7 +6,9 @@ function Projects() {
     return (
         <section className="section-wrapper" id="Projects">
             <div className="row">
-                <Fade bottom><div className="col-md-12 section-titles">Projects</div></Fade>
+                <div className="col-md-12">
+                    <Fade bottom><div className="section-titles">Projects</div></Fade>
+                </div>
             </div>
             <div className="row">
                 <div className="col-lg-6">
