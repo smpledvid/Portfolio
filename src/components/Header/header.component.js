@@ -53,22 +53,42 @@ function Header() {
                         <div className="header-buttons-container">
                           <Fade bottom>
                             <AnchorLink href='#About' className="header-anchor-link">
-                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; About</span></Button>
+                              <Button disableRipple color="inherit" className={classes.button}>
+                                <span className="button-content">
+                                  <span className="less-than-symbol">&gt;</span>
+                                  <span className="header-label"> About</span> 
+                                  </span>
+                              </Button>
                             </AnchorLink>
                           </Fade>
                           <Fade bottom delay={200}>
                             <AnchorLink href='#Projects' className="header-anchor-link">
-                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Projects</span></Button>
+                              <Button disableRipple color="inherit" className={classes.button}>
+                                <span className="button-content">
+                                  <span className="less-than-symbol">&gt;</span> 
+                                  <span className="header-label"> Projects</span>
+                                </span>
+                              </Button>
                             </AnchorLink>
                           </Fade>
                           <Fade bottom delay={400}>
                             <AnchorLink href='#Experience' className="header-anchor-link">
-                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Experience</span></Button>
+                              <Button disableRipple color="inherit" className={classes.button}>
+                                <span className="button-content">
+                                  <span className="less-than-symbol">&gt;</span>
+                                  <span className="header-label"> Experience</span>
+                                </span>
+                              </Button>
                             </AnchorLink>
                           </Fade>
                           <Fade bottom delay={600}>
                             <AnchorLink href='#Contact' className="header-anchor-link">
-                              <Button disableRipple color="inherit" className={classes.button}><span className="button-content">&gt; Contact</span></Button>
+                              <Button disableRipple color="inherit" className={classes.button}>
+                                <span className="button-content">
+                                  <span className="less-than-symbol">&gt;</span>
+                                  <span className="header-label"> Contact</span>
+                                </span>
+                                </Button>
                             </AnchorLink>
                           </Fade>
                         </div>

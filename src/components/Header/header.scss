@@ -11,7 +11,7 @@
     }
 
     .button-content {
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 300;
         color: #121F3D;
     }
@@ -22,5 +22,17 @@
 
     .MuiToolbar-regular {
         min-height: 34px;
+    }
+
+    .less-than-symbol {
+        font-weight: bold;
+        font-size: 2em;
+        color: var(--color-secondary);
+    }
+
+    .header-label {
+        font-weight: bold;
+        position: relative;
+        bottom: 6px;
     }
 }

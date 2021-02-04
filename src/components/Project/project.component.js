@@ -80,51 +80,33 @@ function Project(props) {
             <Dialog
                 open={dialogIsOpen}
                 onClose={toggleProjectDialog}
-                maxWidth={'md'}
+                maxWidth={'sm'}
                 PaperProps={{
                     classes: {
                         root: classes.dialog
                     }
                 }}
             >
-                <div className="row">
-                    <div className={`col-sm-6 ${classes.dialogImage}`}>
+                <div>
+                    <div className={classes.dialogImage}>
                         <img src={CorgiImage}  alt="" className={classes.image}/>
                     </div>
-                    <div className={`col-sm-6`}>
-                        <div className="dialog-info-wrapper">
-                            <div className='dialog-title'>{dialogTitle}</div>
-                            <Card className={classes.dialogDescriptionCard}>
-                                <div>{dialogDescription}</div>
-                            </Card>
-                            <div className="dialog-technologies">
-                                {projectTechnology.map(technology => (
-                                    <span className="dialog-technologies-tag" key={technology}>{technology}</span>
-                                ))}
-                            </div>
-                            <div className="dialog-links">
-                                <span className="icon-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
-                                <span className="icon-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
-                            </div>
+                    <div className="dialog-info-wrapper">
+                        <div className='dialog-title'>{dialogTitle}</div>
+                        <Card className={classes.dialogDescriptionCard}>
+                            <div>{dialogDescription}</div>
+                        </Card>
+                        <div className="dialog-technologies">
+                            {projectTechnology.map(technology => (
+                                <span className="dialog-technologies-tag" key={technology}>{technology}</span>
+                            ))}
+                        </div>
+                        <div className="dialog-links">
+                            <span className="icon-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
+                            <span className="icon-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
                         </div>
                     </div>
                 </div>
-                
-                {/* <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
-                <DialogContent>
-                <DialogContentText id="alert-dialog-description">
-                    Let Google help apps determine location. This means sending anonymous location data to
-                    Google, even when no apps are running.
-                </DialogContentText>
-                </DialogContent>
-                <DialogActions>
-                    <Button onClick={toggleProjectDialog} color="primary">
-                        Disagree
-                    </Button>
-                    <Button onClick={toggleProjectDialog} color="primary">
-                        Agree
-                    </Button>
-                </DialogActions> */}
             </Dialog>
         </section>
     )
