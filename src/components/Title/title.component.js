@@ -22,7 +22,7 @@ function Title() {
   }
 
   return (
-    <section id="title">
+    <section className="section-wrapper" id="title">
       <div className="title-component-wrapper">
         <div className="content">
           <div id="title-name">david j. liang</div>

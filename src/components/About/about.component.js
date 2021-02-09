@@ -62,17 +62,24 @@ function About() {
     }
 
     return (
-        <section className="container" id="About">
+        <section className="section-wrapper" id="About">
             <div className="row">
-                <Fade bottom><div className="section-titles">About</div></Fade>
+                <div className="col-md-12">
+                    <Fade bottom><div className="section-titles">About</div></Fade>
+                </div>
             </div>
             <div className="row">
-                <Fade bottom>
-                    <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
-                </Fade>
+                <div className="col-md-12">
+                    <Fade bottom>
+                        <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
+                    </Fade>
+                </div>
+                
             </div>
             <div className="row">
-                <Fade bottom><div className="section-titles">Skills</div></Fade>
+                <div className="col-md-12">
+                    <Fade bottom><div className="section-titles">Skills</div></Fade>
+                </div>
             </div>
             <div className="row">
                 <div className="col-md-12">
