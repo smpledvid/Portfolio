@@ -65,7 +65,7 @@ function About() {
         <section className="section-wrapper" id="About">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">About</div></Fade>
+                    <Fade bottom><div className="section-titles">.about( )</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -78,7 +78,7 @@ function About() {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">Skills</div></Fade>
+                    <Fade bottom><div className="section-titles">.skills( )</div></Fade>
                 </div>
             </div>
             <div className="row">

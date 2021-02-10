@@ -55,8 +55,8 @@ function Header() {
                             <AnchorLink href='#About' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  <span className="less-than-symbol">&gt;</span>
-                                  <span className="header-label"> About</span> 
+                                  {/* <span className="less-than-symbol">&gt;</span> */}
+                                  <span className="header-label"> .about( )</span> 
                                   </span>
                               </Button>
                             </AnchorLink>
@@ -65,8 +65,8 @@ function Header() {
                             <AnchorLink href='#Projects' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  <span className="less-than-symbol">&gt;</span> 
-                                  <span className="header-label"> Projects</span>
+                                  {/* <span className="less-than-symbol">&gt;</span>  */}
+                                  <span className="header-label"> .projects( )</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -75,8 +75,8 @@ function Header() {
                             <AnchorLink href='#Experience' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  <span className="less-than-symbol">&gt;</span>
-                                  <span className="header-label"> Experience</span>
+                                  {/* <span className="less-than-symbol">&gt;</span> */}
+                                  <span className="header-label"> .experience( )</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -85,8 +85,8 @@ function Header() {
                             <AnchorLink href='#Contact' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  <span className="less-than-symbol">&gt;</span>
-                                  <span className="header-label"> Contact</span>
+                                  {/* <span className="less-than-symbol">&gt;</span> */}
+                                  <span className="header-label"> .contact( )</span>
                                 </span>
                                 </Button>
                             </AnchorLink>

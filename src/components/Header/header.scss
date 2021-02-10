@@ -11,13 +11,8 @@
     }
 
     .button-content {
-        font-size: 2em;
-        font-weight: 300;
-        color: #121F3D;
-    }
-
-    .button-content:hover {
-        color: var(--color-secondary);
+        
+        text-transform: none;
     }
 
     .MuiToolbar-regular {
@@ -31,8 +26,14 @@
     }
 
     .header-label {
+        font-size: 2em;
         font-weight: bold;
-        position: relative;
-        bottom: 6px;
+        color: #121F3D;
+        font-family: 'Nunito Sans', sans-serif;
+        transition: color 0.3s ease-out;
+    }
+
+    .header-label:hover {
+        color: var(--color-secondary);
     }
 }
