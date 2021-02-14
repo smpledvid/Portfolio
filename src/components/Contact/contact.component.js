@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
     sendButton: {
         width: '100%',
         marginTop: '1em',
-        backgroundColor: '#F9A620',
+        backgroundColor: '#40F99B',
         fontSize: '1.5em',
         fontWeight: 'bold',
         "&:hover" : {
-            backgroundColor: '#F9A620'
+            backgroundColor: '#40F99B'
         }
     }
 }));

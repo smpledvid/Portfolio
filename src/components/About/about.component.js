@@ -22,7 +22,7 @@ function About() {
             fontSize: '1em',
             transition: 'background 0.2s ease-in',
             '&:hover': {
-                background: "#F9A620",
+                background: "#40F99B",
             },
         },
         skillChipRowBg : {

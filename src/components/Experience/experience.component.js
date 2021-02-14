@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
     },
     tabIndicator: {
-        backgroundColor: '#F9A620'
+        backgroundColor: '#40F99B'
     }
 }));
 
