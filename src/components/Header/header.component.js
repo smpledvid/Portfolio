@@ -56,7 +56,7 @@ function Header() {
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
                                   {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> .about( )</span> 
+                                  <span className="header-label"> about( );</span> 
                                   </span>
                               </Button>
                             </AnchorLink>
@@ -66,7 +66,7 @@ function Header() {
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
                                   {/* <span className="less-than-symbol">&gt;</span>  */}
-                                  <span className="header-label"> .projects( )</span>
+                                  <span className="header-label"> projects( );</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -76,7 +76,7 @@ function Header() {
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
                                   {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> .experience( )</span>
+                                  <span className="header-label"> experience( );</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -86,7 +86,7 @@ function Header() {
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
                                   {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> .contact( )</span>
+                                  <span className="header-label"> contact( );</span>
                                 </span>
                                 </Button>
                             </AnchorLink>

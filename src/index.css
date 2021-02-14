@@ -1,5 +1,8 @@
+ /*color pallete:  https://coolors.co/717c89-fffafb-161d2f-151515-eca72c */
+
 :root {
-  --color-secondary: teal;
+  --color-white: #FFFAFB;
+  --color-secondary: #F9A620;
   --section-title-font-size: 10em;
 }
 
@@ -12,9 +15,10 @@
 }
 
 .section-titles {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   display: inline-block;
+  color: var(--color-secondary);
 }
 
 .section-titles:after {
@@ -22,7 +26,7 @@
   width: 0px;
   height: 5px;
   display: block;
-  background: black;
+  background: var(--color-white);
   transition: 300ms;
 }
 
@@ -36,8 +40,14 @@
   margin-bottom: 1em;
 }
 
+.row {
+  margin-bottom: -1px;
+}
+
 [data-reactroot] {
+  position: absolute;
   height: 100% !important;
+  width: 100% !important;
 }
 
 body {

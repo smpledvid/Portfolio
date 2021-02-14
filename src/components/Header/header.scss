@@ -1,6 +1,7 @@
 #appbar {
     background: transparent;
     box-shadow: none;
+    border-top: 5px solid #151515;
     
     .header-buttons-container {
         display: flex;
@@ -11,7 +12,6 @@
     }
 
     .button-content {
-        
         text-transform: none;
     }
 
@@ -28,7 +28,7 @@
     .header-label {
         font-size: 2em;
         font-weight: bold;
-        color: #121F3D;
+        color: var(--color-white);
         font-family: 'Nunito Sans', sans-serif;
         transition: color 0.3s ease-out;
     }

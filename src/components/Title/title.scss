@@ -6,8 +6,9 @@
     #title-name {
         font-size: 4em;
         font-weight: bold;
+        color: #FFFAFB;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid grey; /* The typwriter cursor */
+        border-right: .15em solid #F9A620; /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
         /* -webkit-animation: marquee 50s linear infinite; */
         animation: 
@@ -23,7 +24,7 @@
     /* The typewriter cursor effect */
     @keyframes blink-caret {
         from, to { border-color: transparent }
-        50% { border-color: grey; }
+        50% { border-color: #F9A620; }
     }
 
     .icon-wrapper {

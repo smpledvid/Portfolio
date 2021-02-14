@@ -1,6 +1,9 @@
 #home-page {
     display: flex;
     height: 100%;
+    background-color: #161d2f ;
+    // background: rgb(113,124,137);
+    // background: linear-gradient(0deg, rgba(113,124,137,1) 0%, rgba(22,29,47,1) 100%);
 
     .svg-col {
         padding: 0px;
@@ -19,7 +22,17 @@
     }
 
     .below-wave {
-        background-color: #F3F4F5;
+        background-color: #161d2f;
+        color: var(--color-white);
+    }
+
+    .above-wave {
+        
+        background: linear-gradient(0deg, rgba(113,124,137,1) 0%, rgba(22,29,47,1) 100%);
+    }
+
+    .wave-row {
+        background: rgb(113,124,137);
     }
 
     .scroll-top-container {
@@ -31,4 +44,7 @@
         }
     }
 
+    .navigation-arrow-button {
+        color: var(--color-secondary);
+    }
 }

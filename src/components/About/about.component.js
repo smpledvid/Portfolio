@@ -20,8 +20,9 @@ function About() {
         skillChip : {
             fontWeight: 'bold',
             fontSize: '1em',
+            transition: 'background 0.2s ease-in',
             '&:hover': {
-                background: "teal",
+                background: "#F9A620",
             },
         },
         skillChipRowBg : {
@@ -65,7 +66,7 @@ function About() {
         <section className="section-wrapper" id="About">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">.about( )</div></Fade>
+                    <Fade bottom><div className="section-titles">about( ) &#123;</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -74,11 +75,14 @@ function About() {
                         <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
                     </Fade>
                 </div>
-                
+            </div>
+            <div className="row">
+                <div className="col-md-12" >
+                    <div className="section-titles">&#125;</div></div>
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">.skills( )</div></Fade>
+                    <Fade bottom><div className="section-titles">skills( ) &#123;</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -95,6 +99,10 @@ function About() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12" >
+                    <div className="section-titles">&#125;</div></div>
             </div>
         </section>
     )

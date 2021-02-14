@@ -7,7 +7,7 @@ function Projects() {
         <section className="section-wrapper" id="Projects">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">.projects( )</div></Fade>
+                    <Fade bottom><div className="section-titles">projects( ) &#123;</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -22,8 +22,10 @@ function Projects() {
                     </Fade>
                 </div>
             </div>
-            
-            
+            <div className="row">
+                <div className="col-md-12" >
+                    <div className="section-titles">&#125;</div></div>
+            </div>
         </section>
     )
 }

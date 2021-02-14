@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
     dialogDescriptionCard: {
         padding: '1em',
-        backgroundColor: 'teal',
+        backgroundColor: '#F9A620',
         color: 'white'
     },
     dialogDescription: {
