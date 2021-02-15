@@ -69,9 +69,26 @@ function Experience() {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     
-    const handleChange = (event, newValue) => {
+    function handleChange(event, newValue) {
         setValue(newValue);
     };
+
+    function companyClick(companyName) {
+        console.log(companyName);
+        switch(companyName) {
+            case 'avanade':
+                window.open('https://www.avanade.com/en-us', '_blank');
+                break;
+            case 'ecogate':
+                window.open('https://www.ecogate.com/', '_blank');
+                break;
+            case 'ucr':
+                window.open('https://www.ucr.edu/', '_blank');
+                break;
+            default:
+                break;
+          }
+    }
 
     return (
         <section className="section-wrapper" id="Experience">
@@ -101,7 +118,7 @@ function Experience() {
                             <div className="tab-panel-wrapper">
                                 <div className="header">
                                     <div>
-                                        <span className="company-role">Software Engineer @ </span><span className="company-name">Avanade</span>
+                                        <span className="company-role">Software Engineer @ </span><span className="company-name" onClick={() => companyClick('avanade')}>Avanade</span>
                                     </div>
                                     <div className="experience-date">
                                         March 2019 - Present
@@ -122,7 +139,7 @@ function Experience() {
                             <div className="tab-panel-wrapper">
                                 <div className="header">
                                     <div>
-                                        <span className="company-role">Software Engineer Intern @ </span><span className="company-name">Ecogate</span>
+                                        <span className="company-role">Software Engineer Intern @ </span><span className="company-name" onClick={() => companyClick('ecogate')}>Ecogate</span>
                                     </div>
                                     <div className="experience-date">
                                         June 2017 - Sept 2017
@@ -143,7 +160,7 @@ function Experience() {
                             <div className="tab-panel-wrapper">
                                 <div className="header">
                                     <div>
-                                        <span className="company-role">Student @ </span><span className="company-name">University of California Riverside</span>
+                                        <span className="company-role">Student @ </span><span className="company-name" onClick={() => companyClick('ucr')}>University of California Riverside</span>
                                     </div>
                                     <div className="experience-date">
                                         Oct 2014 - June 2018

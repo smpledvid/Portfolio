@@ -14,6 +14,13 @@
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .section-wrapper {
+    margin-left: 20em;
+    margin-right: 20em;
+  }
+}
+
 .section-titles {
   font-size: 2em;
   font-weight: bold;

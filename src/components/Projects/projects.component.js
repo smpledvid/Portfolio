@@ -11,12 +11,12 @@ function Projects() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-12">
                     <Fade bottom>
                         <Project />
                     </Fade>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-12">
                     <Fade bottom>
                         <Project />
                     </Fade>

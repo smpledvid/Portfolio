@@ -56,7 +56,7 @@ function Contact() {
 
     function sendMessage() {
         console.log('sending message!!');
-        axios.post('http://localhost:3030/api/email', generateEmailObject())
+        axios.post('https://emailapinodejs.herokuapp.com/api/email', generateEmailObject())
         .then(res => {
             if(res.data.success) {
                 setName('');
