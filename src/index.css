@@ -51,6 +51,10 @@
   margin-bottom: -1px;
 }
 
+.MuiTooltip-tooltip {
+  font-size: 1em !important;
+}
+
 [data-reactroot] {
   position: absolute;
   height: 100% !important;

@@ -1,5 +1,9 @@
 .tabs-container {
     justify-content: center;
+
+    .tab-panel-children {
+        font-size: 0.7em;
+    }
 }
 
 .tab-panels {
@@ -12,6 +16,8 @@
 
 .tab-panel-wrapper {
     width: 100%;
+
+
 
     .header {
         width: inherit;
