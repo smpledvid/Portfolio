@@ -72,7 +72,15 @@ function About() {
             <div className="row">
                 <div className="col-md-12">
                     <Fade bottom>
-                        <div className="about-content">Hi, My name is David and I'm a recent graduate at the University of California, Riverside. I graduated on June 2018 with a B.S. in Computer Science and I am currently looking for full time opportunities as a Software Engineer. I love working on interactive websites and learning about new technologies!</div>
+                        <div className="about-content">
+                            I'm David, a Software Engineer based out in Los Angeles, CA.
+                            <br/><br/>
+                            After graduating from the University of California, Riverside with a Computer Science degree in 2018, I spent last 2.5 years learning and working on various web applications. My current professional experience consists of working as a Frontend Engineer, but my primary goal is to be proficient throughout the webstack.  
+                            <br/><br/>
+                            These days I'm spending my time working on side projects, finding new technologies, and learning the best UI/UX design practices.
+                            <br/><br/>
+                            Outside of work, you'll find me obsessing over movies, lifting weights and actively finding the best ice cream parlor.
+                        </div>
                     </Fade>
                 </div>
             </div>

@@ -125,11 +125,12 @@ function Experience() {
                                 </div>
                                 <div className="description">
                                     <ul>
-                                        <li>Created a more user friendly web page for Ecogate's clients.</li>
-                                        <li>Handled any previous or new bugs that may appear.</li>
-                                        <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
-                                        <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
-                                        <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
+                                        <li>Designed the architecture of the front-end web application by researching technologies and identifying and learning best practices.</li>
+                                        <li>Developed interactive modular components that can be reused throughout the web application in Angular/React.</li>
+                                        <li>Produced practical and dynamic web pages by translating UI/UX wireframes into code with HTML/CSS.</li>
+                                        <li>Conducted unit testing for every story through Jasmine &#38; Karma for Angular and Jest for React.</li>
+                                        <li>Worked alongside Backend Developers to ensure the front end application communicates with the database.</li>
+                                        <li>Implemented custom REST APIs in C# for the front end to communicate with the database.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -167,11 +168,9 @@ function Experience() {
                                 </div>
                                 <div className="description">
                                     <ul>
-                                        <li>Created a more user friendly web page for Ecogate's clients.</li>
-                                        <li>Handled any previous or new bugs that may appear.</li>
-                                        <li>Created virtual simulations for Ecogate's machines to help speed up the testing process.</li>
-                                        <li>Worked on the backend of Ecogate's user web page to make sure each users's machine appear faster.</li>
-                                        <li>Javascript, KnockoutJS, NodeJS, Bootstrap, HTML, CSS, Python, Git</li>
+                                        <li>B.S. in Computer Science (Cum Laude) / GPA: 3.61</li>
+                                        <li>Course work included but not exclusive to: Software Development, Databases, Data Structures &#38; Algorithms, Machine Learning &#38; Data Mining  </li>
+                                        <li>Built a recipe mobile (iOS) application for my senior project with a team of students called Cookpad which ended up 2nd place in the class.</li>
                                     </ul>
                                 </div>
                             </div>
