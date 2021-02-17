@@ -2,7 +2,7 @@
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .skill-chips-row {
@@ -18,6 +18,35 @@
     .skill-chips-container {
         display: flex;
         justify-content: center;
+    }
+}
+
+.avatar-col {
+    display: flex;
+    justify-content: center;
+
+    .avatar-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 26em;
+    
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: 1.5em;
+            border-radius: 1.5em;
+            box-shadow: 10px 9px 10px 1px #717c89;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .avatar-col {
+        justify-content: flex-end;
+    }
+
+    .avatar-wrapper {
+        margin-bottom: 1em;
     }
 }
 

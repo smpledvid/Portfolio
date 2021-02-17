@@ -9,6 +9,7 @@ import AngularLogo from  '../../assets/images/AngularLogo.png';
 import TypescriptLogo from  '../../assets/images/TypescriptLogo.png';
 import HtmlCssLogo from  '../../assets/images/HtmlCssLogo.png';
 import CPPLogo from  '../../assets/images/CPPLogo.png';
+import ProfilePic from '../../assets/images/ProfilePic.jpg';
 
 import './about.scss';
 
@@ -70,7 +71,12 @@ function About() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-lg-6 avatar-col">
+                    <div className="avatar-wrapper">
+                        <img src={ProfilePic} alt="avatar"/>
+                    </div>
+                </div>
+                <div className="col-lg-6">
                     <Fade bottom>
                         <div className="about-content">
                             I'm David, a Software Engineer based out in Los Angeles, CA.
@@ -79,7 +85,7 @@ function About() {
                             <br/><br/>
                             These days I'm spending my time working on side projects, finding new technologies, and learning the best UI/UX design practices.
                             <br/><br/>
-                            Outside of work, you'll find me obsessing over movies, lifting weights and actively finding the best ice cream parlor.
+                            Outside of work, you'll catch me obsessing over movies, lifting weights and actively seeking the best ice cream parlor.
                         </div>
                     </Fade>
                 </div>
