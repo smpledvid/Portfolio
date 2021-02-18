@@ -93,7 +93,7 @@ function Experience() {
         <section className="section-wrapper" id="Experience">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">experience( ) &#123;</div></Fade>
+                    <Fade bottom><div className="section-titles">EXPERIENCE</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -177,10 +177,6 @@ function Experience() {
                         </TabPanel>
                     </div>
                 </Fade>
-            </div>
-            <div className="row">
-                <div className="col-md-12" >
-                    <div className="section-titles">&#125;</div></div>
             </div>
         </section>
     )

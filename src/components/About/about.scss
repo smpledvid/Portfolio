@@ -29,13 +29,35 @@
         display: flex;
         justify-content: center;
         width: 26em;
-    
+        margin-bottom: 2em;
         img {
+            position: relative;
+            display: inline-block;
             width: 100%;
             height: auto;
             margin-top: 1.5em;
             border-radius: 1.5em;
             box-shadow: 10px 9px 10px 1px #717c89;
+            transition: all 0.3s ease-in-out;
+        }
+          
+          /* Create the hidden pseudo-element */
+          /* include the shadow for the end state */
+        img::after {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            box-shadow: 10px 9px 10px 5px #717c89;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        img:hover {
+            box-shadow: 10px 9px 10px 5px #717c89;
+        }
+
+        img:hover::after {
+            opacity: 1;
         }
     }
 }

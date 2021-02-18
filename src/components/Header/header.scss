@@ -7,30 +7,37 @@
         display: flex;
     }
 
+    .header-anchor-link {
+        margin-right: 1.5em;
+    }
+    
     .header-anchor-link:hover {
         text-decoration: none;
+        
     }
 
     .button-content {
         text-transform: none;
+        display: flex;
+
+        .header-label {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--color-white);
+            font-family: 'Nunito Sans', sans-serif;
+            transition: color 0.3s ease-out;
+        }
+
+        .icons {
+            font-size: 1.3em;
+            margin-right: 0.2em;
+            margin-top: 0.16em;
+            color: var(--color-secondary);
+        }
     }
 
     .MuiToolbar-regular {
         min-height: 34px;
-    }
-
-    .less-than-symbol {
-        font-weight: bold;
-        font-size: 2em;
-        color: var(--color-secondary);
-    }
-
-    .header-label {
-        font-size: 2em;
-        font-weight: bold;
-        color: var(--color-white);
-        font-family: 'Nunito Sans', sans-serif;
-        transition: color 0.3s ease-out;
     }
 
     .header-label:hover {

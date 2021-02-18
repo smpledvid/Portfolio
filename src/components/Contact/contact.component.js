@@ -142,7 +142,7 @@ function Contact() {
         <section className="section-wrapper" id="Contact">
             <div className="row">
                 <div className="col-md-12 ">
-                    <Fade bottom><div className="section-titles">contact( ) &#123;</div></Fade>
+                    <Fade bottom><div className="section-titles">CONTACT</div></Fade>
                 </div>
             </div>
             <div className="row contact-wrapper">
@@ -229,10 +229,6 @@ function Contact() {
                         </div>
                     </Fade>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12" >
-                    <div className="section-titles">&#125;</div></div>
             </div>
         </section>
     )

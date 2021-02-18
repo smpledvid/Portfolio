@@ -11,6 +11,15 @@ import Slide from '@material-ui/core/Slide';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from 'react-reveal/Fade';
 
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import MailIcon from '@material-ui/icons/Mail';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import PersonIcon from '@material-ui/icons/Person';
+import SettingsIcon from '@material-ui/icons/Settings';
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
+import WorkIcon from '@material-ui/icons/Work';
+
 import './header.scss';
 
 function HideOnScroll(props) {
@@ -55,8 +64,8 @@ function Header() {
                             <AnchorLink href='#About' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> about( );</span> 
+                                  <span className="header-label"><PersonIcon className="icons"/></span>
+                                  <span className="header-label">ABOUT</span> 
                                   </span>
                               </Button>
                             </AnchorLink>
@@ -65,8 +74,8 @@ function Header() {
                             <AnchorLink href='#Projects' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  {/* <span className="less-than-symbol">&gt;</span>  */}
-                                  <span className="header-label"> projects( );</span>
+                                  <span className="header-label"><SettingsIcon className="icons"/></span> 
+                                  <span className="header-label">PROJECTS</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -75,8 +84,8 @@ function Header() {
                             <AnchorLink href='#Experience' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> experience( );</span>
+                                  <span className="header-label"><WorkIcon className="icons"/></span>
+                                  <span className="header-label">EXPERIENCE</span>
                                 </span>
                               </Button>
                             </AnchorLink>
@@ -85,8 +94,8 @@ function Header() {
                             <AnchorLink href='#Contact' className="header-anchor-link">
                               <Button disableRipple color="inherit" className={classes.button}>
                                 <span className="button-content">
-                                  {/* <span className="less-than-symbol">&gt;</span> */}
-                                  <span className="header-label"> contact( );</span>
+                                  <span className="header-label"><MailIcon className="icons"/></span>
+                                  <span className="header-label">CONTACT</span>
                                 </span>
                                 </Button>
                             </AnchorLink>

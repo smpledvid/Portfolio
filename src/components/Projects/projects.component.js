@@ -7,24 +7,20 @@ function Projects() {
         <section className="section-wrapper" id="Projects">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">projects( ) &#123;</div></Fade>
+                    <Fade bottom><div className="section-titles">PROJECTS</div></Fade>
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-12">
+                <div className="col-md-12">
                     <Fade bottom>
                         <Project />
                     </Fade>
                 </div>
-                <div className="col-lg-12">
+                <div className="col-md-12">
                     <Fade bottom>
                         <Project />
                     </Fade>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12" >
-                    <div className="section-titles">&#125;</div></div>
             </div>
         </section>
     )

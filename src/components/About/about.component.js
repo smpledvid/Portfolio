@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
+import Avatar from '@material-ui/core/Avatar';
 
 import ReactLogo from '../../assets/images/ReactLogo.png';
 import JavascriptLogo from  '../../assets/images/JavascriptLogo.png';
@@ -10,14 +11,22 @@ import TypescriptLogo from  '../../assets/images/TypescriptLogo.png';
 import HtmlCssLogo from  '../../assets/images/HtmlCssLogo.png';
 import CPPLogo from  '../../assets/images/CPPLogo.png';
 import ProfilePic from '../../assets/images/ProfilePic.jpg';
+import HTMLLogo from '../../assets/images/HTML5Logo.png';
+import CSSLogo from '../../assets/images/CSSLogo.png';
 
 import './about.scss';
 
 function About() {
-    const listOfSkills = ['Javascript', 'HTML/CSS', 'React', 'Angular', 'Typescript', 'C++'];
+    // const listOfSkills = ['Javascript', 'HTML/CSS', 'React', 'Angular', 'Typescript', 'C++'];
+    const listOfSkillsImages = [JavascriptLogo, HTMLLogo, CSSLogo, ReactLogo, AngularLogo, TypescriptLogo, CPPLogo];
     const [skillChipRowBG, setSkillChipRowBG] = useState('')
 
     const useStyles = makeStyles((theme) => ({
+        skillAvatar: {
+            width: '4em',
+            height: '4em',
+            borderRadius: 'inherit'
+        },
         skillChip : {
             fontWeight: 'bold',
             fontSize: '1em',
@@ -67,7 +76,7 @@ function About() {
         <section className="section-wrapper" id="About">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">about( ) &#123;</div></Fade>
+                    <Fade bottom><div className="section-titles">ABOUT</div></Fade>
                 </div>
             </div>
             <div className="row">
@@ -79,9 +88,9 @@ function About() {
                 <div className="col-lg-6">
                     <Fade bottom>
                         <div className="about-content">
-                            I'm David, a Software Engineer based out in Los Angeles, CA.
+                            I'm David, a Software Engineer based out of Los Angeles, CA.
                             <br/><br/>
-                            After graduating from the University of California, Riverside with a Computer Science degree in 2018, I spent last 2.5 years learning and working on various web applications. My current professional experience consists of working as a Frontend Engineer, but my primary goal is to be proficient throughout the webstack.  
+                            After graduating from the University of California, Riverside with a Computer Science degree in 2018, I spent the last 2.5 years learning and working on various web applications. My current professional experience consists of working as a Frontend Engineer, but my primary goal is to be proficient throughout the webstack.  
                             <br/><br/>
                             These days I'm spending my time working on side projects, finding new technologies, and learning the best UI/UX design practices.
                             <br/><br/>
@@ -91,17 +100,8 @@ function About() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-12" >
-                    <div className="section-titles">&#125;</div></div>
-            </div>
-            <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">skills( ) &#123;</div></Fade>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12">
-                    <div className={`row skill-chips-row  ${classes.skillChipRowBg}`}>
+                    {/* <div className={`row skill-chips-row  ${classes.skillChipRowBg}`}>
                         <div className="skill-chips-container">
                             {listOfSkills.map((skillLabel, labelIndex) => (
                                 <span key={skillLabel} className="skill-chip-wrapper">
@@ -111,12 +111,19 @@ function About() {
                                 </span>
                             ))}
                         </div>
+                    </div> */}
+                    <div className="row skill-chips-row">
+                        <div className="skill-chips-container">
+                            {listOfSkillsImages.map((skillImage, labelIndex) => (
+                                <span key={labelIndex} className="skill-chip-wrapper">
+                                    <Fade bottom delay={labelIndex * 200}>
+                                        <Avatar alt="Remy Sharp" src={skillImage} className={classes.skillAvatar}/>
+                                    </Fade>
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12" >
-                    <div className="section-titles">&#125;</div></div>
             </div>
         </section>
     )
