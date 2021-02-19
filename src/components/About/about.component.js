@@ -20,31 +20,38 @@ function About() {
     const listOfSkills = [
         {
             label: 'Javascript',
-            image: JavascriptLogo
+            image: JavascriptLogo,
+            url: 'https://www.javascript.com/'
         },
         {
             label: 'HTML',
-            image: HTMLLogo
+            image: HTMLLogo,
+            url: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
         },
         {
             label: 'CSS',
-            image: CSSLogo
+            image: CSSLogo,
+            url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
         },
         {
             label: 'React',
-            image: ReactLogo
+            image: ReactLogo,
+            url: 'https://reactjs.org/'
         },
         {
             label: 'Angular',
-            image: AngularLogo
+            image: AngularLogo,
+            url: 'https://angular.io/'
         },
         {
             label: 'Typescript',
-            image: TypescriptLogo
+            image: TypescriptLogo,
+            url: 'https://www.typescriptlang.org/'
         },
         {
             label: 'C++',
-            image: CPPLogo
+            image: CPPLogo,
+            url: 'https://www.cplusplus.com/'
         }
     ];
 
@@ -52,9 +59,16 @@ function About() {
         skillAvatar: {
             width: '4em',
             height: '4em',
-            borderRadius: 'inherit'
+            borderRadius: 'inherit',
+            "&:hover" :{
+                cursor: 'pointer'
+            }
         }
     }));
+
+    function handleSkillAvatarClick(skillUrl) {
+        window.open(skillUrl, '_blank');
+    }
 
     const classes = useStyles();
 
@@ -93,7 +107,7 @@ function About() {
                                 <span key={labelIndex} className="skill-chip-wrapper">
                                     <Fade bottom delay={labelIndex * 200}>
                                         <Tooltip title={skill.label}>
-                                            <Avatar alt="" src={skill.image} className={`skill-avatar-${skill.label} ${classes.skillAvatar}`}/>
+                                            <Avatar alt="" onClick={() => handleSkillAvatarClick(skill.url)} src={skill.image} className={`skill-avatar-${skill.label} ${classes.skillAvatar}`}/>
                                         </Tooltip>
                                     </Fade>
                                 </span>
