@@ -171,7 +171,7 @@ function Contact() {
                             <div className="col-md-6">
                                 <div className="input-labels">Email:</div>
                                 <div>
-                                    <TextField 
+                                    <TextField
                                         variant="outlined" 
                                         className={classes.messageInput}
                                         InputProps={{
@@ -189,7 +189,7 @@ function Contact() {
                             <div className="col-md-12">
                                 <div className="input-labels">Message:</div>
                                 <div>
-                                    <TextField 
+                                    <TextField
                                         variant="outlined" 
                                         className={classes.messageInput}
                                         multiline

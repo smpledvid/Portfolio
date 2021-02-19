@@ -3,12 +3,12 @@ import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 import Avatar from '@material-ui/core/Avatar';
+import Tooltip from '@material-ui/core/Tooltip';
 
 import ReactLogo from '../../assets/images/ReactLogo.png';
 import JavascriptLogo from  '../../assets/images/JavascriptLogo.png';
 import AngularLogo from  '../../assets/images/AngularLogo.png';
 import TypescriptLogo from  '../../assets/images/TypescriptLogo.png';
-import HtmlCssLogo from  '../../assets/images/HtmlCssLogo.png';
 import CPPLogo from  '../../assets/images/CPPLogo.png';
 import ProfilePic from '../../assets/images/ProfilePic.jpg';
 import HTMLLogo from '../../assets/images/HTML5Logo.png';
@@ -17,60 +17,46 @@ import CSSLogo from '../../assets/images/CSSLogo.png';
 import './about.scss';
 
 function About() {
-    // const listOfSkills = ['Javascript', 'HTML/CSS', 'React', 'Angular', 'Typescript', 'C++'];
-    const listOfSkillsImages = [JavascriptLogo, HTMLLogo, CSSLogo, ReactLogo, AngularLogo, TypescriptLogo, CPPLogo];
-    const [skillChipRowBG, setSkillChipRowBG] = useState('')
+    const listOfSkills = [
+        {
+            label: 'Javascript',
+            image: JavascriptLogo
+        },
+        {
+            label: 'HTML',
+            image: HTMLLogo
+        },
+        {
+            label: 'CSS',
+            image: CSSLogo
+        },
+        {
+            label: 'React',
+            image: ReactLogo
+        },
+        {
+            label: 'Angular',
+            image: AngularLogo
+        },
+        {
+            label: 'Typescript',
+            image: TypescriptLogo
+        },
+        {
+            label: 'C++',
+            image: CPPLogo
+        }
+    ];
 
     const useStyles = makeStyles((theme) => ({
         skillAvatar: {
             width: '4em',
             height: '4em',
             borderRadius: 'inherit'
-        },
-        skillChip : {
-            fontWeight: 'bold',
-            fontSize: '1em',
-            transition: 'background 0.2s ease-in',
-            '&:hover': {
-                background: "#40F99B",
-            },
-        },
-        skillChipRowBg : {
-            backgroundImage: `url(${skillChipRowBG})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundSize: 'contain',
-        },
+        }
     }));
 
     const classes = useStyles();
-
-    function onSkillChipHover(label) {
-        let backgroundImage = '';
-        switch(label) {
-            case 'React':
-                backgroundImage = ReactLogo;
-                break;
-            case 'Javascript':
-                backgroundImage = JavascriptLogo;
-                break;
-            case 'Angular':
-                backgroundImage = AngularLogo;
-                break;
-            case 'HTML/CSS':
-                backgroundImage = HtmlCssLogo;
-                break;
-            case 'Typescript':
-                backgroundImage = TypescriptLogo;
-                break;
-            case 'C++':
-                backgroundImage = CPPLogo;
-                break;
-            default:
-                break;
-        }
-        setSkillChipRowBG(backgroundImage);
-    }
 
     return (
         <section className="section-wrapper" id="About">
@@ -101,23 +87,14 @@ function About() {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    {/* <div className={`row skill-chips-row  ${classes.skillChipRowBg}`}>
-                        <div className="skill-chips-container">
-                            {listOfSkills.map((skillLabel, labelIndex) => (
-                                <span key={skillLabel} className="skill-chip-wrapper">
-                                    <Fade bottom delay={labelIndex * 200}>
-                                        <Chip className={classes.skillChip} label={skillLabel} onMouseEnter={() => onSkillChipHover(skillLabel)}></Chip>
-                                    </Fade>
-                                </span>
-                            ))}
-                        </div>
-                    </div> */}
                     <div className="row skill-chips-row">
                         <div className="skill-chips-container">
-                            {listOfSkillsImages.map((skillImage, labelIndex) => (
+                            {listOfSkills.map((skill, labelIndex) => (
                                 <span key={labelIndex} className="skill-chip-wrapper">
                                     <Fade bottom delay={labelIndex * 200}>
-                                        <Avatar alt="Remy Sharp" src={skillImage} className={classes.skillAvatar}/>
+                                        <Tooltip title={skill.label}>
+                                            <Avatar alt="" src={skill.image} className={`skill-avatar-${skill.label} ${classes.skillAvatar}`}/>
+                                        </Tooltip>
                                     </Fade>
                                 </span>
                             ))}
