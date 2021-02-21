@@ -27,12 +27,16 @@
     }
 
     .above-wave {
-        
         background: linear-gradient(0deg, rgba(113,124,137,1) 0%, rgba(22,29,47,1) 100%);
     }
 
     .wave-row {
         background: rgb(113,124,137);
+    }
+
+    .wave-row, .above-wave {
+        position: relative;
+        z-index: 99;
     }
 
     .scroll-top-container {
@@ -44,8 +48,63 @@
         }
     }
 
+    .sidebar-email-container {
+        .sidebar-email {
+            position: fixed;
+            bottom: 25%;
+            left: -4%;
+            color: var(--color-white);
+            font-size: 1.2em;
+            transform: rotate(-90deg);
+            display: none;
+            
+        }
+
+        .sidebar-email::before {
+            content: "";
+            position: absolute;
+            width: 80%;
+            border-bottom: 3px solid var(--color-secondary);
+            margin-top: 0.8em;
+            margin-left: -10.5em;
+        }
+
+        #email {
+            transition: color 0.3s ease-in-out;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        #email:hover {
+            cursor: pointer;
+            color: var(--color-secondary);
+        }
+    }
+
+    @media screen and (min-width: 1080px) {
+        .sidebar-email-container {
+            .sidebar-email {
+                left: 1%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 966px) {
+        .sidebar-email-container {
+            .sidebar-email {
+                display: initial;
+            }
+        }
+    }
+    
     .navigation-arrow-button {
         font-size: 2em;
         color: var(--color-secondary);
+        transition: transform 0.3s ease-in;
+    }
+
+    .navigation-arrow-button:hover {
+        transform: translateY(-5px);
     }
 }

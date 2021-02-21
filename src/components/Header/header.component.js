@@ -11,13 +11,9 @@ import Slide from '@material-ui/core/Slide';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from 'react-reveal/Fade';
 
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import MailIcon from '@material-ui/icons/Mail';
-import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import PersonIcon from '@material-ui/icons/Person';
 import SettingsIcon from '@material-ui/icons/Settings';
-import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
-import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import WorkIcon from '@material-ui/icons/Work';
 
 import './header.scss';

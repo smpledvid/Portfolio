@@ -24,22 +24,17 @@
 .section-titles {
   font-size: 2em;
   font-weight: bold;
-  display: inline-block;
   color: var(--color-secondary);
 }
 
 .section-titles:after {
   content: '';
-  width: 0px;
-  height: 5px;
-  display: block;
-  background: var(--color-white);
-  transition: 300ms;
-}
-
-.section-titles:hover:after {
-  visibility: visible;
-  width: 100%;
+  position: absolute;
+  width: 40%;
+  border-bottom: 1px solid var(--color-white);
+  margin-top: 0.75em;
+  margin-left: 0.5em;
+  opacity: 0.5;
 }
 
 .section-wrapper {

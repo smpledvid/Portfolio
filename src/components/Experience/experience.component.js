@@ -6,6 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Fade from 'react-reveal/Fade';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 
 import './experience.scss';
 
@@ -93,7 +94,12 @@ function Experience() {
         <section className="section-wrapper" id="Experience">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">EXPERIENCE</div></Fade>
+                    {/* <Fade bottom> */}
+                        <div className="section-titles">
+                            <span><WorkOutlineIcon className="experience-icon"/></span>
+                            <span>EXPERIENCE</span>
+                        </div>
+                    {/* </Fade> */}
                 </div>
             </div>
             <div className="row">

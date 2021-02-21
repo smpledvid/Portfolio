@@ -24,7 +24,7 @@ function Title() {
   return (
     <section className="section-wrapper title-component-wrapper" id="title">
         <div className="content">
-          <div id="title-name">David J Liang</div>
+          <div id="title-name">DAVID J. LIANG</div>
           <div id="icons-container">
             <span className="icon-wrapper"><LinkedInIcon id="linkedin-icon" onClick={() => handleIconClick('linkedIn')}/></span>
             <span className="icon-wrapper"><GithubIcon id="github-icon" onClick={() => handleIconClick('github')}/></span>

@@ -58,6 +58,9 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <div className="sidebar-email-container">
+        <div className="sidebar-email"><a id="email" href="mailto:davidd.j.liang@gmail.com">davidd.j.liang@gmail.com</a></div>
+      </div>
       <div className="scroll-top-container">
         <IconButton onClick={scrollToTop} id="scroll-top-button">
           <NavigationIcon className="navigation-arrow-button"/>

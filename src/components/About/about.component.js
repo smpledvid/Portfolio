@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 import Avatar from '@material-ui/core/Avatar';
 import Tooltip from '@material-ui/core/Tooltip';
+import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 
 import ReactLogo from '../../assets/images/ReactLogo.png';
 import JavascriptLogo from  '../../assets/images/JavascriptLogo.png';
@@ -60,8 +61,10 @@ function About() {
             width: '4em',
             height: '4em',
             borderRadius: 'inherit',
+            transition: 'transform 0.2s ease-in-out',
             "&:hover" :{
-                cursor: 'pointer'
+                cursor: 'pointer',
+                transform: 'scale(1.3)'
             }
         }
     }));
@@ -76,7 +79,12 @@ function About() {
         <section className="section-wrapper" id="About">
             <div className="row">
                 <div className="col-md-12">
-                    <Fade bottom><div className="section-titles">ABOUT</div></Fade>
+                    {/* <Fade bottom> */}
+                        <div className={`section-titles ${classes.aboutIcon}`}>
+                            <span className="testo"><PersonOutlineIcon className="about-icon"/></span>
+                            <span>ABOUT</span>
+                        </div>
+                    {/* </Fade> */}
                 </div>
             </div>
             <div className="row">
