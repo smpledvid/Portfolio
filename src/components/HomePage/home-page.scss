@@ -57,7 +57,7 @@
             font-size: 1.2em;
             transform: rotate(-90deg);
             display: none;
-            
+            transition: transform 0.3s ease-in-out;
         }
 
         .sidebar-email::before {
@@ -67,6 +67,10 @@
             border-bottom: 3px solid var(--color-secondary);
             margin-top: 0.8em;
             margin-left: -10.5em;
+        }
+
+        .sidebar-email:hover {
+            transform: rotate(-90deg) translateX(8px);
         }
 
         #email {
