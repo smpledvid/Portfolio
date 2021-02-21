@@ -3,10 +3,16 @@
     margin-bottom: 1em;
     margin-left: 1.5em;
     font-size: 1.2em;
-}
 
-.testo {
-    // display:none;
+    .about-intro {
+        font-weight: 700;
+        font-size: 2em;
+        font-family: var(--font-family-secondary);
+
+        #name {
+            color: var(--color-secondary);
+        }
+    }
 }
 
 .about-icon {

@@ -4,6 +4,7 @@
   --color-white: #FFFAFB;
   --color-secondary: #40F99B;
   --section-title-font-size: 10em;
+  --font-family-secondary: 'Nunito Sans', sans-serif;
 }
 
 
@@ -25,6 +26,7 @@
   font-size: 2em;
   font-weight: bold;
   color: var(--color-secondary);
+  font-family: var(--font-family-secondary);
 }
 
 .section-titles:after {

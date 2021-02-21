@@ -96,7 +96,7 @@ function About() {
                 <div className="col-lg-6">
                     <Fade bottom>
                         <div className="about-content">
-                            I'm David, a Software Engineer based out of Los Angeles, CA.
+                            <span className="about-intro">I'm <span id="name">David</span>, a Software Engineer based out of Los Angeles, CA.</span>
                             <br/><br/>
                             After graduating from the University of California, Riverside with a Computer Science degree in 2018, I spent the last 2.5 years learning and working on various web applications. My current professional experience consists of working as a Frontend Engineer, but my primary goal is to be proficient throughout the webstack.  
                             <br/><br/>

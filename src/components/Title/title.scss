@@ -6,7 +6,8 @@
     #title-name {
         font-size: 4em;
         font-weight: bold;
-        color: #FFFAFB;
+        color: var(--color-white);
+        font-family: var(--font-family-secondary);
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .15em solid var(--color-secondary); /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
