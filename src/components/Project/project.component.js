@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
         width: '35em',
         height: '20em',
         transition: 'background 0.5s ease-out',
+        position: 'relative',
         '&:hover': {
             cursor: 'pointer',
         },
@@ -30,9 +31,12 @@ const useStyles = makeStyles((theme) => ({
         // width: '50%'
     },
     dialogDescriptionCard: {
+        backgroundColor: 'rgba(113,124,137,1)',
+        color: 'white',
+        fontSize: '1.3em',
+        marginLeft: '1.3em',
+        marginRight: '1.3em',
         padding: '1em',
-        backgroundColor: '#40F99B',
-        color: 'white'
     },
     dialogDescription: {
         // width: '50%'
@@ -70,12 +74,15 @@ function Project(props) {
 
     return (
         <section className='project-wrapper'>
-            <Card className={classes.card} onClick={toggleProjectDialog}>
-                <CardMedia
-                    className={classes.cover}
-                    image={CorgiImage}
-                />
-            </Card>
+            <div className="card-wrapper">
+                <Card className={classes.card} onClick={toggleProjectDialog}>
+                    <CardMedia
+                        className={classes.cover}
+                        image={CorgiImage}
+                    />
+                </Card>
+                <Card className="project-title-card"><span className="project-title">The Ultimate Corgi</span></Card>
+            </div>
             <Dialog
                 open={dialogIsOpen}
                 onClose={toggleProjectDialog}
@@ -92,7 +99,7 @@ function Project(props) {
                     </div>
                     <div className="dialog-info-wrapper">
                         <div className='dialog-title'>{dialogTitle}</div>
-                        <Card className={classes.dialogDescriptionCard}>
+                        <Card elevation={5} className={classes.dialogDescriptionCard}>
                             <div>{dialogDescription}</div>
                         </Card>
                         <div className="dialog-technologies">
@@ -101,8 +108,8 @@ function Project(props) {
                             ))}
                         </div>
                         <div className="dialog-links">
-                            <span className="icon-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
-                            <span className="icon-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
+                            <span className="links-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
+                            <span className="links-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
                         </div>
                     </div>
                 </div>

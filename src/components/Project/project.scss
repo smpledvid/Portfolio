@@ -1,55 +1,96 @@
 .project-wrapper {
     margin-top: 1em;
     margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
 }
+
+.card-wrapper {
+    position: relative;
+    width: 50em;
+
+    .project-title-card {
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        width: 10em;
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+        background-color: var(--color-secondary);
+
+        .project-title {
+            font-size: 1em;
+            font-weight: bold;
+            color: var(--color-dark-blue);
+            opacity: 0.95;
+        }
+    }
+}
+
 
 .dialog-title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin: 0.5em auto;
+    font-family: var(--font-family-secondary);
+    margin-left: 1em;
+    margin-right: 1em;
+    color: var(--color-dark-blue);
 }
 
 .dialog-info-wrapper {
-    margin-left: 1em;
-    margin-right: 1em;
 
     .dialog-technologies, .dialog-links {
         display: flex;
         justify-content: flex-end;
         width: 100%;
         margin-top: 0.5em;
+        padding-right: 1.3em;
         
         .dialog-technologies-tag {
             margin-left: 0.3em;
             margin-right: 0.3em;
             font-weight: bold;
-            font-style: italic;
+            font-size: 1.3em;
+            font-family: var(--font-family-secondary);
+            color: var(--color-dark-blue);
         }
     }
 
     .dialog-links {
-        margin-top: 2em;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        background-color: var(--color-dark-blue);
 
-        .icon-wrapper {
+        .links-wrapper {
             margin-left: 0.5em;
             margin-right: 0.5em;
+            display: flex;
+            cursor: pointer;
+
+            .links-icon {
+                cursor: pointer;
+                width: 2em;
+                height: 2em;
+                fill: #FFFAFB;
+            }
         }
 
-        .links-icon {
-            cursor: pointer;
-            width: 1.8em;
-            height: 1.8em;
+        .links-wrapper:hover {
+            color: var(--color-secondary);
         }
 
         #github-icon{
             transition: fill 0.5s ease-out;
         }
+        
         #github-icon:hover {
             fill: var(--color-secondary);
         }
 
         #external-icon {
-            stroke: black;
+            stroke: #FFFAFB;
             transition: stroke 0.5s ease-out;
         }
         #external-icon:hover {

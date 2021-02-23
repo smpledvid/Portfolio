@@ -1,10 +1,12 @@
  /*color pallete:  https://coolors.co/717c89-fffafb-161d2f-151515-eca72c */
 
 :root {
+  --color-dark-blue: #161d2f;
   --color-white: #FFFAFB;
   --color-secondary: #40F99B;
   --section-title-font-size: 10em;
   --font-family-secondary: 'Nunito Sans', sans-serif;
+  --section-content--margin-top-bottom: 3em;
 }
 
 

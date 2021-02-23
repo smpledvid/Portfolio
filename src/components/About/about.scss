@@ -38,14 +38,30 @@
         display: flex;
         justify-content: center;
     }
+
+    #skill-avatar-HTML, #skill-avatar-CSS {
+        margin-top: 0.5em;
+        transform: scale(1.2);
+    }
+    
+    #skill-avatar-HTML:hover, #skill-avatar-CSS:hover {
+        transform: scale(1.5);
+    }
+    
+    #skill-avatar-React, #skill-avatar-Angular {
+        margin-top: 0.3em;
+        transform: scale(1.2);
+    }
+    
+    #skill-avatar-React:hover, #skill-avatar-Angular:hover {
+        transform: scale(1.5);
+    }
+    
 }
 
-.skill-avatar-HTML, .skill-avatar-CSS {
-    margin-top: 0.5em;
-}
 
-.skill-avatar-React, .skill-avatar-Angular {
-    margin-top: 0.3em;
+.avatar-row {
+    margin-top: var(--section-content--margin-top-bottom);
 }
 
 .avatar-col {

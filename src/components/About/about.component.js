@@ -15,6 +15,14 @@ import ProfilePic from '../../assets/images/ProfilePic.jpg';
 import HTMLLogo from '../../assets/images/HTML5Logo.png';
 import CSSLogo from '../../assets/images/CSSLogo.png';
 
+import NodeLogo from  '../../assets/images/NodeJSLogo.png';
+import GithubLogo from  '../../assets/images/GithubLogo.png';
+import BitBucketLogo from  '../../assets/images/BitBucketLogo.jpg';
+import JiraLogo from  '../../assets/images/JiraLogo.png';
+import NpmLogo from '../../assets/images/NpmLogo.png';
+import MaterialLogo from '../../assets/images/MaterialLogo.png';
+import BootstrapLogo from '../../assets/images/BootstrapLogo.png';
+
 import './about.scss';
 
 function About() {
@@ -55,7 +63,43 @@ function About() {
             url: 'https://www.cplusplus.com/'
         }
     ];
-
+    const listOfTechnologies = [
+        {
+            label: 'NodeJS',
+            image: NodeLogo,
+            url: 'https://nodejs.org/en/'
+        },
+        {
+            label: 'Github',
+            image: GithubLogo,
+            url: 'https://github.com/'
+        },
+        {
+            label: 'Bitbucket',
+            image: BitBucketLogo,
+            url: 'https://www.atlassian.com/software/bitbucket'
+        },
+        {
+            label: 'JIRA',
+            image: JiraLogo,
+            url: 'https://www.atlassian.com/software/jira'
+        },
+        {
+            label: 'npm',
+            image: NpmLogo,
+            url: 'https://www.npmjs.com/'
+        },
+        {
+            label: 'Material UI',
+            image: MaterialLogo,
+            url: 'https://material-ui.com/'
+        },
+        {
+            label: 'Bootstrap',
+            image: BootstrapLogo,
+            url: 'https://getbootstrap.com/'
+        }
+    ]
     const useStyles = makeStyles((theme) => ({
         skillAvatar: {
             width: '4em',
@@ -87,7 +131,7 @@ function About() {
                     {/* </Fade> */}
                 </div>
             </div>
-            <div className="row">
+            <div className="row avatar-row">
                 <div className="col-lg-6 avatar-col">
                     <div className="avatar-wrapper">
                         <img src={ProfilePic} alt="avatar"/>
@@ -115,7 +159,24 @@ function About() {
                                 <span key={labelIndex} className="skill-chip-wrapper">
                                     <Fade bottom delay={labelIndex * 200}>
                                         <Tooltip title={skill.label}>
-                                            <Avatar alt="" onClick={() => handleSkillAvatarClick(skill.url)} src={skill.image} className={`skill-avatar-${skill.label} ${classes.skillAvatar}`}/>
+                                            <Avatar alt="" onClick={() => handleSkillAvatarClick(skill.url)} src={skill.image} id={`skill-avatar-${skill.label}`} className={classes.skillAvatar}/>
+                                        </Tooltip>
+                                    </Fade>
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="row skill-chips-row">
+                        <div className="skill-chips-container">
+                            {listOfTechnologies.map((skill, labelIndex) => (
+                                <span key={labelIndex} className="skill-chip-wrapper">
+                                    <Fade bottom delay={labelIndex * 200}>
+                                        <Tooltip title={skill.label}>
+                                            <Avatar alt="" onClick={() => handleSkillAvatarClick(skill.url)} src={skill.image} id={`skill-avatar-${skill.label}`} className={classes.skillAvatar}/>
                                         </Tooltip>
                                     </Fade>
                                 </span>
