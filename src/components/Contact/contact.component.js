@@ -155,7 +155,7 @@ function Contact() {
                     <Flip><Avatar alt="Remy Sharp" src={CorgiImage} className={classes.avatar}/></Flip>
                 </div> */}
                 <div className="col-md-12">
-                    <Fade right>
+                    <Fade>
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="input-labels">Name:</div>
