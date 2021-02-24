@@ -1,0 +1,21 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    margin: 1em auto;
+
+    #footer-content {
+        color: var(--color-white);
+        transition: color 0.5s ease-in-out;
+        display: inherit;
+    }
+
+    #footer-content:hover {
+        color: var(--color-secondary);
+        cursor: pointer;
+    }
+
+    #footer-github-icon {
+        margin-right: 0.5em;
+        padding-top: 0.1em;
+    }
+}

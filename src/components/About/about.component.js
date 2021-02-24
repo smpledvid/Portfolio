@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Chip from '@material-ui/core/Chip';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 import Avatar from '@material-ui/core/Avatar';
@@ -133,9 +132,11 @@ function About() {
             </div>
             <div className="row avatar-row">
                 <div className="col-lg-6 avatar-col">
-                    <div className="avatar-wrapper">
-                        <img src={ProfilePic} alt="avatar"/>
-                    </div>
+                    <Fade bottom>
+                        <div className="avatar-wrapper">
+                            <img src={ProfilePic} alt="avatar"/>
+                        </div>
+                    </Fade>
                 </div>
                 <div className="col-lg-6">
                     <Fade bottom>

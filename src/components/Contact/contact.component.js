@@ -46,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         "&:hover" : {
             backgroundColor: '#40F99B'
+        },
+        "&:disabled" : {
+            backgroundColor: 'rgb(113,124,137)'
         }
     },
     progressBar: {
@@ -151,11 +154,8 @@ function Contact() {
                 </div>
             </div>
             <div className="row contact-wrapper">
-                {/* <div className="col-md-6 avatar-wrapper">
-                    <Flip><Avatar alt="Remy Sharp" src={CorgiImage} className={classes.avatar}/></Flip>
-                </div> */}
                 <div className="col-md-12">
-                    <Fade>
+                    <Fade botatom>
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="input-labels">Name:</div>
