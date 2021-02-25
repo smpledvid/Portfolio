@@ -5,7 +5,8 @@
   --color-white: #FFFAFB;
   --color-secondary: #40F99B;
   --section-title-font-size: 10em;
-  --font-family-secondary: 'Nunito Sans', sans-serif;
+  --font-family-primary: 'Rubik', sans-serif;
+  --font-family-secondary: 'Open Sans', sans-serif;
   --section-content--margin-top-bottom: 3em;
 }
 
@@ -28,7 +29,7 @@
   font-size: 2em;
   font-weight: bold;
   color: var(--color-secondary);
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary);
 }
 
 .section-titles:after {
@@ -52,6 +53,7 @@
 
 .MuiTooltip-tooltip {
   font-size: 1em !important;
+  font-family: var(--font-family-primary) !important;
 }
 
 [data-reactroot] {

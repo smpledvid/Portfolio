@@ -51,9 +51,9 @@
     .sidebar-email-container {
         .sidebar-email {
             position: fixed;
-            bottom: 25%;
-            left: -4%;
-            color: var(--color-white);
+            bottom: 13em;
+            left: -5%;
+            color: var(--color-white); 
             font-size: 1.2em;
             transform: rotate(-90deg);
             display: none;
@@ -78,6 +78,7 @@
             overflow: hidden;
             text-decoration: none;
             color: var(--color-white);
+            font-family: var(--font-family-primary);
         }
 
         #email:hover {

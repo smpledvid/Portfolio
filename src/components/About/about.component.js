@@ -109,6 +109,9 @@ function About() {
                 cursor: 'pointer',
                 transform: 'scale(1.3)'
             }
+        },
+        toolTip: {
+            fontSize: '2em'
         }
     }));
 

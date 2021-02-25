@@ -24,11 +24,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     dialog: {
-        overflowX: 'hidden',
-        overflowY: 'hidden'
-    },
-    dialogImage: {
-        // width: '50%'
+        overflowX: 'hidden'
     },
     dialogDescriptionCard: {
         backgroundColor: 'rgba(113,124,137,1)',
@@ -37,11 +33,8 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '1.3em',
         marginRight: '1.3em',
         padding: '1em',
+        fontFamily: "'Open Sans', sans-serif"
     },
-    dialogDescription: {
-        // width: '50%'
-    },
-    
     image: {
         maxWidth: '100%',
         maxHeight: '100%'

@@ -2,7 +2,7 @@
     font-size: 3em !important;
     position: absolute;
     color: white;
-    left: 0.6em;
+    left: 0.75em;
     top: -0.3em;
     opacity: 0.1;
 }
@@ -38,15 +38,16 @@
         width: inherit;
         margin-top: 1em;
         font-size: 1.6em;
+        font-family: var(--font-family-secondary);
     }
 
     .company-name {
         display: inline-block;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 2em;
         color: var(--color-secondary);
         cursor: pointer;
-        font-family: var(--font-family-secondary);
+        font-family: var(--font-family-primary);
     }
 
     .company-name:after {
@@ -64,11 +65,13 @@
     }
     
     .company-role {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 2em;
+        font-family: var(--font-family-primary);
     }
 
     .experience-date {
+        font-family: var(--font-family-secondary);
         font-size: 2em;
         opacity: 0.8;
     }

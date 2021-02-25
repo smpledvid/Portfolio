@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Fade from 'react-reveal/Fade';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
@@ -59,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
     tab: {
         fontSize: '1em',
         fontWeight: 'bold',
+        fontFamily: "'Rubik', sans-seriff",
     },
     tabIndicator: {
         backgroundColor: '#40F99B'
@@ -145,10 +145,10 @@ function Experience() {
                             <div className="tab-panel-wrapper">
                                 <div className="header">
                                     <div>
-                                        <span className="company-role">Software Engineer Intern @ </span><span className="company-name" onClick={() => companyClick('ecogate')}>Ecogate</span>
+                                        <span className="company-role">Software Engr. Intern @ </span><span className="company-name" onClick={() => companyClick('ecogate')}>Ecogate</span>
                                     </div>
                                     <div className="experience-date">
-                                        June 2017 - Sept 2017
+                                        Jun 2017 - Sept 2017
                                     </div>
                                 </div>
                                 <div className="description">

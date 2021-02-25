@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     input: {
         fontSize: '1.5em',
+        fontFamily: "'Open Sans', sans-serif",
         padding: '0.5em',
         color: 'white'
     },
