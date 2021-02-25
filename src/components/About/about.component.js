@@ -125,12 +125,10 @@ function About() {
         <section className="section-wrapper" id="About">
             <div className="row">
                 <div className="col-md-12">
-                    {/* <Fade bottom> */}
-                        <div className={`section-titles ${classes.aboutIcon}`}>
-                            <span className="testo"><PersonOutlineIcon className="about-icon"/></span>
-                            <span>ABOUT</span>
-                        </div>
-                    {/* </Fade> */}
+                    <div className={`section-titles ${classes.aboutIcon}`}>
+                        <span className="testo"><PersonOutlineIcon className="about-icon"/></span>
+                        <span>ABOUT</span>
+                    </div>
                 </div>
             </div>
             <div className="row avatar-row">

@@ -94,12 +94,10 @@ function Experience() {
         <section className="section-wrapper" id="Experience">
             <div className="row">
                 <div className="col-md-12">
-                    {/* <Fade bottom> */}
-                        <div className="section-titles">
-                            <span><WorkOutlineIcon className="experience-icon"/></span>
-                            <span>EXPERIENCE</span>
-                        </div>
-                    {/* </Fade> */}
+                    <div className="section-titles">
+                        <span><WorkOutlineIcon className="experience-icon"/></span>
+                        <span>EXPERIENCE</span>
+                    </div>
                 </div>
             </div>
             <div className="row">

@@ -146,12 +146,10 @@ function Contact() {
         <section className="section-wrapper" id="Contact">
             <div className="row">
                 <div className="col-md-12 ">
-                    {/* <Fade bottom> */}
-                        <div className="section-titles">
-                            <span><MailOutlineIcon className="mail-icon"/></span>
-                            <span>CONTACT</span>
-                        </div>
-                    {/* </Fade> */}
+                    <div className="section-titles">
+                        <span><MailOutlineIcon className="mail-icon"/></span>
+                        <span>CONTACT</span>
+                    </div>
                 </div>
             </div>
             <div className="row contact-wrapper">
