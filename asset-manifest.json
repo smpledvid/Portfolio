@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.f8294587.chunk.css",
-    "main.js": "/static/js/main.912b51ac.chunk.js",
-    "main.js.map": "/static/js/main.912b51ac.chunk.js.map",
+    "main.js": "/static/js/main.d9c2d714.chunk.js",
+    "main.js.map": "/static/js/main.d9c2d714.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.98a9936a.js",
     "runtime-main.js.map": "/static/js/runtime-main.98a9936a.js.map",
-    "static/js/2.a0723335.chunk.js": "/static/js/2.a0723335.chunk.js",
-    "static/js/2.a0723335.chunk.js.map": "/static/js/2.a0723335.chunk.js.map",
+    "static/js/2.31adcae1.chunk.js": "/static/js/2.31adcae1.chunk.js",
+    "static/js/2.31adcae1.chunk.js.map": "/static/js/2.31adcae1.chunk.js.map",
     "static/js/3.96f23c1c.chunk.js": "/static/js/3.96f23c1c.chunk.js",
     "static/js/3.96f23c1c.chunk.js.map": "/static/js/3.96f23c1c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.f8294587.chunk.css.map": "/static/css/main.f8294587.chunk.css.map",
-    "static/js/2.a0723335.chunk.js.LICENSE.txt": "/static/js/2.a0723335.chunk.js.LICENSE.txt",
+    "static/js/2.31adcae1.chunk.js.LICENSE.txt": "/static/js/2.31adcae1.chunk.js.LICENSE.txt",
     "static/media/BootstrapLogo.31308e1f.png": "/static/media/BootstrapLogo.31308e1f.png",
     "static/media/CORGI.73437c0f.jpg": "/static/media/CORGI.73437c0f.jpg",
     "static/media/CPPLogo.0a81196c.png": "/static/media/CPPLogo.0a81196c.png",
@@ -22,16 +22,18 @@
     "static/media/JavascriptLogo.ab65e723.png": "/static/media/JavascriptLogo.ab65e723.png",
     "static/media/LinkedInIcon.324460b7.svg": "/static/media/LinkedInIcon.324460b7.svg",
     "static/media/MaterialLogo.5b2d8a0a.png": "/static/media/MaterialLogo.5b2d8a0a.png",
+    "static/media/MovieListSnapshot.d41d086c.PNG": "/static/media/MovieListSnapshot.d41d086c.PNG",
     "static/media/NodeJSLogo.30ca82b0.png": "/static/media/NodeJSLogo.30ca82b0.png",
     "static/media/ProfilePic.f4bd1ea4.jpg": "/static/media/ProfilePic.f4bd1ea4.jpg",
     "static/media/ReactLogo.73ac128a.png": "/static/media/ReactLogo.73ac128a.png",
     "static/media/ResumeIcon.454ffd0b.svg": "/static/media/ResumeIcon.454ffd0b.svg",
+    "static/media/RgbGameSnapshot.67ad6a1c.png": "/static/media/RgbGameSnapshot.67ad6a1c.png",
     "static/media/TypescriptLogo.5415cac2.png": "/static/media/TypescriptLogo.5415cac2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.98a9936a.js",
-    "static/js/2.a0723335.chunk.js",
+    "static/js/2.31adcae1.chunk.js",
     "static/css/main.f8294587.chunk.css",
-    "static/js/main.912b51ac.chunk.js"
+    "static/js/main.d9c2d714.chunk.js"
   ]
 }
