@@ -5,9 +5,9 @@ import HomePage from './components/HomePage/home-page.component';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <HomePage/>
-  </React.StrictMode>
+  // </React.StrictMode>
   ,
   document.getElementById('root')
 );

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Card from '@material-ui/core/Card';
@@ -51,18 +51,42 @@ const useStyles = makeStyles((theme) => ({
 
 function Project(props) {
     const [dialogIsOpen, setDialogIsOpen] = useState(false);
+
+    const [title, setTitle] = useState('');
     const [dialogTitle, setDialogTitle] = useState('');
     const [dialogDescription, setDialogDescription] = useState('');
     const [projectTechnology, setProjectTechs] = useState([]);
+    const [projectImage, setProjectImage] = useState(null);
+
+    useEffect(() => {
+        setTitle(props.projectData.title);
+        setDialogTitle(props.projectData.dialogTitle);
+        setDialogDescription(props.projectData.description);
+        setProjectTechs(props.projectData.technology);
+        setProjectImage(props.projectData.image);
+    }, [props]);
+
     const classes = useStyles();
  
     function toggleProjectDialog() {
-        // Mocking Data
-        setDialogTitle('The Ultimate Corgi');
-        setDialogDescription('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dot dolore magna aliqua. Ut enim sed do eiusmod tempor incididunt ut labore et dolore  magna ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
-        setProjectTechs(['React', 'Javascript', 'HTML/CSS']);
-
         setDialogIsOpen(!dialogIsOpen);
+    }
+
+    function onLinksClick(linkType) {
+        let link;
+        switch(linkType) {
+            case 'github':
+                link = props.projectData.githubLink;
+                window.open(link, '_blank');
+                break;
+            case 'website':
+                link = props.projectData.websiteLink;
+                break;
+            default:
+                break;
+        }
+
+        
     }
 
     return (
@@ -71,10 +95,10 @@ function Project(props) {
                 <Card className={classes.card} onClick={toggleProjectDialog}>
                     <CardMedia
                         className={classes.cover}
-                        image={CorgiImage}
+                        image={projectImage}
                     />
                 </Card>
-                <Card className="project-title-card"><span className="project-title">The Ultimate Corgi</span></Card>
+                <Card className="project-title-card"><span className="project-title">{title}</span></Card>
             </div>
             <Dialog
                 open={dialogIsOpen}
@@ -88,7 +112,7 @@ function Project(props) {
             >
                 <div>
                     <div className={classes.dialogImage}>
-                        <img src={CorgiImage}  alt="" className={classes.image}/>
+                        <img src={projectImage}  alt="" className={classes.image}/>
                     </div>
                     <div className="dialog-info-wrapper">
                         <div className='dialog-title'>{dialogTitle}</div>
@@ -101,8 +125,8 @@ function Project(props) {
                             ))}
                         </div>
                         <div className="dialog-links">
-                            <span className="links-wrapper"><GithubIcon className="links-icon" id="github-icon"/></span>
-                            <span className="links-wrapper"><ExternalIcon className="links-icon" id="external-icon"/></span>
+                            <span className="links-wrapper"><GithubIcon className="links-icon" id="github-icon" onClick={() => onLinksClick('github')}/></span>
+                            <span className="links-wrapper"><ExternalIcon className="links-icon" id="external-icon" onClick={() => onLinksClick('website')}/></span>
                         </div>
                     </div>
                 </div>

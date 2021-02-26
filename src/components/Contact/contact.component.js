@@ -154,7 +154,7 @@ function Contact() {
             </div>
             <div className="row contact-wrapper">
                 <div className="col-md-12">
-                    <Fade botatom>
+                    <Fade bottom>
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="input-labels">Name:</div>
