@@ -213,7 +213,7 @@ function Contact() {
                             <div className="col-md-12 send-button-row">
                                 {
                                     !showProgressBar && 
-                                    <Tooltip title="Please enter Name, Email, and Message."  className={classes.buttonTooltip}>
+                                    <Tooltip title={messageButtonDisabled ? "Please enter Name, Email, and Message." : ""} className={classes.buttonTooltip}>
                                         <span className="send-button-container">
                                             <Button variant="contained" disabled={messageButtonDisabled} className={classes.sendButton} onClick={sendMessage}>
                                                 <MailOutlineIcon className={classes.mailIcon}/>

@@ -13,7 +13,7 @@ function Footer() {
             <div className="row">
                 <div className="col-xs-12 ">
                     <footer id="footer">
-                        <div id="footer-content" onClick={footerContentClick}><span id="footer-github-icon"><GitHubIcon/></span><span>Built by David J. Liang</span></div>
+                        <div id="footer-content" onClick={footerContentClick}><span id="footer-github-icon"><GitHubIcon/></span><span>Built &amp; Designed by David J. Liang</span></div>
                     </footer>
                 </div>
             </div>
